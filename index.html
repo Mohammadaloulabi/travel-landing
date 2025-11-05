@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Jadoo</title>
+  </head>
+  <body class="bg-light text-dark" id="page">
+    <header id="headerSection">
+      <!-- -----------------------------nav-------------------------------- -->
+      <nav
+        class="navbar navbar-expand-lg position-fixed top-0 w-100 d-flex align-items-center z-2"
+      >
+        <div class="container py-2">
+          <img src="./assets/images/Logo.png" alt="logo-img" />
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-grow-0 navLinkSize text-center fw-bold"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center gap-5 bg-toggle fs-5 fw-bold"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-secondary" aria-current="page" href="#"
+                  >Desitnations</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#" aria-disabled="true"
+                  >Flights</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#" aria-disabled="true"
+                  >Bookings</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#" aria-disabled="true"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item text-secondary">
+                <button class="px-3 py-1 rounded-2 btn btn-outline-secondary">
+                  Sign up
+                </button>
+              </li>
+              <!-- <button class=" border-0 bg-transparent text-secondary ">
+                EN<img
+                  class="lang-vict secondary"
+                  src="./assets/images/Vector 1.png"
+                  alt=""
+                />
+              </button> -->
+              <div class="d-flex ms-auto">
+                <button
+                  id="langToggle"
+                  class="btn btn-outline-secondary btn-sm"
+                  type="button"
+                  aria-label="Toggle language"
+                >
+                  AR
+                </button>
+              </div>
+              <button
+                id="toggle"
+                class="border-0 text-secondary bg-transparent"
+              >
+                Dark/light
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ------------------------------hero----------------------------------- -->
+      <section id="hero">
+        <div class="container">
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap hero-container"
+          >
+            <div class="hero-desc position-relative z-1">
+              <p class="hero-head mb-3" data-i18n="hero.kicker">
+                Best Destinations around the world
+              </p>
+              <h1 class="mb-4" data-i18n="hero.title">
+                Travel, enjoy and live a new and full life
+              </h1>
+              <p class="mb-4 hero-text" data-i18n="hero.subtitle">
+                Built Wicket longer admire do barton vanity itself do in it.
+                Preferred to sportsmen it engrossed listening. Park gate sell
+                they west hard for the.
+              </p>
+              <div class="d-flex gap-5 align-items-center flex-wrap parent">
+                <button
+                  class="px-4 py-3 border border-0 rounded-2 text-white find-btn"
+                >
+                  <span data-i18n="hero.cta">Find out more</span>
+                </button>
+                <div class="d-flex align-items-center gap-4 play-btn">
+                  <button
+                    class="rounded-circle border border-0 demo-btn position-relative"
+                  >
+                    <img
+                      src="./assets/images/Polygon 1.png"
+                      class="position-absolute top-50 start-50 translate-middle"
+                      alt=""
+                    />
+                  </button>
+                  <span data-i18n="hero.cta2">Play Demo</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-img position-relative z-1">
+              <img
+                src="./assets/images/Image.png"
+                class="w-100 d-block"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- -------------------------------offer------------------------------ -->
+    <section id="offer">
+      <div class="container mt-5 position-relative">
+        <div class="text-center mx-auto header-title">
+          <p>CATEGORY</p>
+          <h2>We Offer Best Services</h2>
+        </div>
+        <div class="position-absolute side-img">
+          <img src="./assets/images/Group 4.png" alt="" />
+        </div>
+      </div>
+      <div class="container offer-cards">
+        <div class="row text-center align-items-center">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div>
+              <img class="mb-4" src="./assets/images/Group 48.png" alt="" />
+              <h3 class="mb-3">Calculated Weather</h3>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div
+              class="flight-card shadow-lg p-3 mb-5 bg-body-tertiary rounded position-relative"
+            >
+              <img class="mb-4" src="./assets/images/Group 51.png" alt="" />
+              <h3 class="mb-3">Best Flights</h3>
+              <p>Engrossed listening. Park gate sell they west hard for the.</p>
+              <img
+                class="z-n1 position-absolute top-100 start-0 translate-middle"
+                src="./assets/images/Rectangle 157.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div>
+              <img class="mb-4" src="./assets/images/Group 50.png" alt="" />
+              <h3 class="mb-3">Local Events</h3>
+              <p>
+                Barton vanity itself do in it. Preferd to men it engrossed
+                listening.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div>
+              <img class="mb-4" src="./assets/images/Group 49.png" alt="" />
+              <h3 class="mb-3">Customization</h3>
+              <p>
+                We deliver outsourced aviation services for military customers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------Destinations---------------------------------- -->
+    <section id="Destinations">
+      <div class="container mt-5">
+        <div class="text-center mx-auto header-title">
+          <p>Top Selling</p>
+          <h2>Top Destinations</h2>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row text-center align-items-center position-relative z-1">
+          <div class="col-lg-4 col-md-5 col-sm-10">
+            <div
+              class="card border-0 rounded-5 shadow p-3 mb-5 bg-body-tertiary rounded"
+            >
+              <img
+                src="./assets/images/card.png"
+                class="card-img-top rounded-top-5"
+                style="height: 457px"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <p>Rome, Italty</p>
+                  <p>$5,42k</p>
+                </div>
+                <div class="d-flex gap-1 navig-arrow">
+                  <img src="./assets/images/navigation 1.png" alt="" />
+                  <p>10 Days Trip</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-10">
+            <div
+              class="card border-0 rounded-5 shadow p-3 mb-5 bg-body-tertiary rounded"
+            >
+              <img
+                src="./assets/images/card2.jpg"
+                class="card-img-top rounded-top-5"
+                style="height: 457px"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <p>London, UK</p>
+                  <p>$4.2k</p>
+                </div>
+                <div class="d-flex gap-1 navig-arrow">
+                  <img src="./assets/images/navigation 1.png" alt="" />
+                  <p>12 Days Trip</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-10">
+            <div
+              class="card border-0 rounded-5 shadow p-3 mb-5 bg-body-tertiary rounded"
+            >
+              <img
+                src="./assets/images/card3.png"
+                class="card-img-top rounded-top-5"
+                style="height: 457px"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-3">
+                  <p>Full Europe</p>
+                  <p>$15k</p>
+                </div>
+                <div class="d-flex gap-1 navig-arrow">
+                  <img src="./assets/images/navigation 1.png" alt="" />
+                  <p>28 Days Trip</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute img-position">
+          <img src="./assets/images/Decore (1).png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------next-trip---------------------------------- -->
+    <section id="next-trip">
+      <div class="container mt-5 position-relative">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 book-trip">
+            <p class="mb-4">Easy and Fast</p>
+            <h2 class="mb-5">Book your next trip in 3 easy steps</h2>
+            <div class="mb-3 d-flex align-items-start gap-3">
+              <img
+                class="icon-trip fs-2"
+                src="./assets/images/Group 7.png"
+                alt=""
+              />
+              <div class="text-edit">
+                <h3 class="fs-6 fw-bold">Choose Destination</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+            <div class="mb-3 d-flex align-items-start gap-3">
+              <img
+                class="icon-trip fs-2"
+                src="./assets/images/Group 12.png"
+                alt=""
+              />
+              <div class="text-edit">
+                <h3 class="fs-6 fw-bold">Make Payment</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+            <div class="mb-3 d-flex align-items-start gap-3">
+              <img
+                class="icon-trip fs-2"
+                src="./assets/images/Group 11.png"
+                alt=""
+              />
+              <div class="text-edit">
+                <h3 class="fs-6 fw-bold">Reach Airport on Selected Date</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- -->
+          <div class="col-lg-5 col-sm-12">
+            <div
+              class="card border-0 rounded-5 shadow p-3 mb-5 bg-body-tertiary rounded mt-5"
+            >
+              <img
+                src="./assets/images/trip-img.jpg"
+                class="card-img-top rounded-top-5"
+                alt="..."
+              />
+              <div class="card-body edit-card">
+                <h3 class="mb-3">Trip To Greece</h3>
+                <p class="mb-3">
+                  14-29 June <span class="ms-4"> by Robbin joseph</span>
+                </p>
+                <img class="mb-3" src="./assets/images/OPTIONS.png" alt="" />
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <img src="./assets/images/building 1.png" alt="" />
+                    <span class="mx-2">24 people going</span>
+                  </div>
+                  <img class="" src="./assets/images/heart (6) 1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="small-card d-flex gap-4 align-items-start py-2 shadow p-3 mb-5 bg-body-tertiary rounded position-absolute"
+        >
+          <img
+            class="rounded-circle fs-2"
+            src="./assets/images/image 32.png"
+            alt=""
+          />
+          <div>
+            <h3>Ongoing</h3>
+            <p>Trip to rome</p>
+            <p><span style="color: #8a79df">40%</span> completed</p>
+            <img src="./assets/images/Group 3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------------------------------tesimonials-------------------------------- -->
+    <section id="tesimonials">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-5 col-md-10 testim-des">
+            <p class="mb-3">Testimonials</p>
+            <h2 class="mb-5">What people say about Us.</h2>
+            <img src="./assets/images/Group 61.png" alt="" />
+          </div>
+          <div class="col-lg-6 col-md-10">
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 position-relative testm-person-card"
+            >
+              <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+                <img
+                  src="./assets/images/Image (1).png"
+                  class="position-absolute icon-testimonials"
+                  alt=""
+                />
+                <p class="mb-5">
+                  “On the Windows talking painted pasture yet its express
+                  parties use. Sure last upon he same as knew next. Of believed
+                  or diverted no.”
+                </p>
+                <h3>Mike taylor</h3>
+                <p>Lahore, Pakistan</p>
+              </div>
+              <img class="mb-3" src="./assets/images/Pagination.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------brands---------------- -->
+    <section id="brands">
+      <div class="container mt-5 text-center">
+        <div class="row align-items-center">
+          <div class="col-lg-2 col-sm-5">
+            <img src="./assets/images/image 27.png" alt="" />
+          </div>
+          <div class="col-lg-2 col-sm-5">
+            <img src="./assets/images/image 28.png" alt="" />
+          </div>
+          <div class="col-lg-3 col-sm-5">
+            <img src="./assets/images/image 29.png" alt="" />
+          </div>
+          <div class="col-lg-3 col-sm-5">
+            <img src="./assets/images/image 30.png" alt="" />
+          </div>
+          <div class="col-lg-2 col-sm-5">
+            <img src="./assets/images/image 31.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------subscibe----------------------------------- -->
+    <section
+      id="subscribe"
+      class="d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div
+        class="container text-center subscribe-cont py-5 my-5 position-relative"
+      >
+        <p class="mb-5 mx-auto">
+          Subscribe to get information, latest news and other interesting offers
+          about Jadoo
+        </p>
+        <div
+          class="d-flex align-items-center justify-content-center input-format gap-3"
+        >
+          <img src="./assets/images/Group 76.png" alt="" />
+          <button class="border-0 rounded px-5 py-1 text-white">
+            Subscribe
+          </button>
+        </div>
+        <div class="position-absolute circle-subscribe">
+          <div class="position-relative">
+            <img src="./assets/images/Ellipse 31.png" alt="" />
+            <img
+              src="./assets/images/send (2) 1.png"
+              class="position-absolute top-50 start-50 translate-middle arrow-center"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="Rectangle-postion position-absolute">
+          <img src="./assets/images/Group 5.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------footer----------------------------- -->
+    <footer id="footer">
+      <div class="container my-5 footer-cont text-center">
+        <div class="row gap-3">
+          <div class="col-lg-3 col-md-6 col-sm-10 text-start logo-col">
+            <h2 class="mb-4">Jadoo.</h2>
+            <p>Book your trip in minute, get full Control for much longer.</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-10 text-start logo-2">
+            <h2 class="mb-3">Company</h2>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Mobile</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-10 text-start logo-2">
+            <h2 class="mb-3">Contact</h2>
+            <p>Help/FAQ</p>
+            <p>Press</p>
+            <p>Affilates</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-10 text-start logo-2">
+            <h2 class="mb-3">More</h2>
+            <p>Airlinefees</p>
+            <p>Airline</p>
+            <p>Low fare tips</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-10 logo-2">
+            <img src="./assets/images/Social.png" alt="" />
+            <p>Discover our app</p>
+            <div class="d-flex gap-1 play-store">
+              <img
+                class="mx-auto"
+                src="./assets/images/Play Store.png"
+                alt=""
+              />
+              <img
+                class="mx-auto"
+                src="./assets/images/Google Play.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
