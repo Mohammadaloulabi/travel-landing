@@ -20,6 +20,7 @@ const i18n = {
     "hero.subtitle":
       "Built Wicket longer admire do barton vanity itself do in it Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.",
     "hero.cta": "Find out more",
+    "hero.cta2": "Play Demo",
   },
   ar: {
     "hero.kicker": "أفضل الوجهات حول العالم",
