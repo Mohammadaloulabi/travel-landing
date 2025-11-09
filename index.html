@@ -29,14 +29,19 @@
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Jadoo</title>
   </head>
-  <body class="bg-light text-dark" id="page">
+  <body>
     <header id="headerSection">
       <!-- -----------------------------nav-------------------------------- -->
       <nav
         class="navbar navbar-expand-lg position-fixed top-0 w-100 d-flex align-items-center z-2"
       >
         <div class="container py-2">
-          <img src="./assets/images/Logo.png" alt="logo-img" />
+          <img
+            class="logoformat"
+            src="./assets/images/Logo.png"
+            alt="logo-img"
+          />
+          <h2 class="title-case logo-format">Jadoo</h2>
           <button
             class="navbar-toggler shadow-none border-0"
             type="button"
@@ -83,13 +88,7 @@
                   Sign up
                 </button>
               </li>
-              <!-- <button class=" border-0 bg-transparent text-secondary ">
-                EN<img
-                  class="lang-vict secondary"
-                  src="./assets/images/Vector 1.png"
-                  alt=""
-                />
-              </button> -->
+
               <div class="d-flex ms-auto">
                 <button
                   id="langToggle"
@@ -100,12 +99,10 @@
                   AR
                 </button>
               </div>
-              <button
-                id="toggle"
-                class="border-0 text-secondary bg-transparent"
-              >
-                Dark/light
-              </button>
+              <div id="theme-switch">
+                <img src="./assets/images/night-mode.png" alt="" />
+                <img src="./assets/images/sun.png" alt="" />
+              </div>
             </ul>
           </div>
         </div>
@@ -117,13 +114,13 @@
             class="d-flex justify-content-between align-items-center flex-wrap hero-container"
           >
             <div class="hero-desc position-relative z-1">
-              <p class="hero-head mb-3" data-i18n="hero.kicker">
+              <p class="hero-head perfix mb-3" data-i18n="hero.kicker">
                 Best Destinations around the world
               </p>
-              <h1 class="mb-4" data-i18n="hero.title">
+              <h1 class="mb-4 title-case" data-i18n="hero.title">
                 Travel, enjoy and live a new and full life
               </h1>
-              <p class="mb-4 hero-text" data-i18n="hero.subtitle">
+              <p class="mb-4 hero-text text-style" data-i18n="hero.subtitle">
                 Built Wicket longer admire do barton vanity itself do in it.
                 Preferred to sportsmen it engrossed listening. Park gate sell
                 they west hard for the.
@@ -144,7 +141,7 @@
                       alt=""
                     />
                   </button>
-                  <span data-i18n="hero.cta2">Play Demo</span>
+                  <span class="text-style" data-i18n="hero.cta2">Play Demo</span>
                 </div>
               </div>
             </div>
@@ -162,9 +159,9 @@
     <!-- -------------------------------offer------------------------------ -->
     <section id="offer">
       <div class="container mt-5 position-relative">
-        <div class="text-center mx-auto header-title">
-          <p>CATEGORY</p>
-          <h2>We Offer Best Services</h2>
+        <div class="text-center mx-auto">
+          <p class="perfix">CATEGORY</p>
+          <h2 class="title-case">We Offer Best Services</h2>
         </div>
         <div class="position-absolute side-img">
           <img src="./assets/images/Group 4.png" alt="" />
@@ -176,7 +173,7 @@
             <div>
               <img class="mb-4" src="./assets/images/Group 48.png" alt="" />
               <h3 class="mb-3">Calculated Weather</h3>
-              <p>
+              <p class="text-style">
                 Built Wicket longer admire do barton vanity itself do in it.
               </p>
             </div>
@@ -187,7 +184,9 @@
             >
               <img class="mb-4" src="./assets/images/Group 51.png" alt="" />
               <h3 class="mb-3">Best Flights</h3>
-              <p>Engrossed listening. Park gate sell they west hard for the.</p>
+              <p class="text-style">
+                Engrossed listening. Park gate sell they west hard for the.
+              </p>
               <img
                 class="z-n1 position-absolute top-100 start-0 translate-middle"
                 src="./assets/images/Rectangle 157.png"
@@ -199,7 +198,7 @@
             <div>
               <img class="mb-4" src="./assets/images/Group 50.png" alt="" />
               <h3 class="mb-3">Local Events</h3>
-              <p>
+              <p class="text-style">
                 Barton vanity itself do in it. Preferd to men it engrossed
                 listening.
               </p>
@@ -209,7 +208,7 @@
             <div>
               <img class="mb-4" src="./assets/images/Group 49.png" alt="" />
               <h3 class="mb-3">Customization</h3>
-              <p>
+              <p class="text-style">
                 We deliver outsourced aviation services for military customers
               </p>
             </div>
@@ -220,9 +219,9 @@
     <!-- -------------------------Destinations---------------------------------- -->
     <section id="Destinations">
       <div class="container mt-5">
-        <div class="text-center mx-auto header-title">
-          <p>Top Selling</p>
-          <h2>Top Destinations</h2>
+        <div class="text-center mx-auto">
+          <p class="perfix">Top Selling</p>
+          <h2 class="title-case">Top Destinations</h2>
         </div>
       </div>
       <div class="container mt-5">
@@ -237,12 +236,12 @@
                 style="height: 457px"
                 alt="..."
               />
-              <div class="card-body">
+              <div class="card-body text-style">
                 <div class="d-flex justify-content-between mb-3">
                   <p>Rome, Italty</p>
                   <p>$5,42k</p>
                 </div>
-                <div class="d-flex gap-1 navig-arrow">
+                <div class="d-flex gap-1 navig-arrow text-style">
                   <img src="./assets/images/navigation 1.png" alt="" />
                   <p>10 Days Trip</p>
                 </div>
@@ -259,7 +258,7 @@
                 style="height: 457px"
                 alt="..."
               />
-              <div class="card-body">
+              <div class="card-body text-style">
                 <div class="d-flex justify-content-between mb-3">
                   <p>London, UK</p>
                   <p>$4.2k</p>
@@ -281,7 +280,7 @@
                 style="height: 457px"
                 alt="..."
               />
-              <div class="card-body">
+              <div class="card-body text-style">
                 <div class="d-flex justify-content-between mb-3">
                   <p>Full Europe</p>
                   <p>$15k</p>
@@ -304,8 +303,8 @@
       <div class="container mt-5 position-relative">
         <div class="row">
           <div class="col-lg-6 col-sm-12 book-trip">
-            <p class="mb-4">Easy and Fast</p>
-            <h2 class="mb-5">Book your next trip in 3 easy steps</h2>
+            <p class="mb-4 perfix">Easy and Fast</p>
+            <h2 class="mb-5 title-case">Book your next trip in 3 easy steps</h2>
             <div class="mb-3 d-flex align-items-start gap-3">
               <img
                 class="icon-trip fs-2"
@@ -314,7 +313,7 @@
               />
               <div class="text-edit">
                 <h3 class="fs-6 fw-bold">Choose Destination</h3>
-                <p>
+                <p class="text-style">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                   tortor tempus.
                 </p>
@@ -328,7 +327,7 @@
               />
               <div class="text-edit">
                 <h3 class="fs-6 fw-bold">Make Payment</h3>
-                <p>
+                <p class="text-style">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                   tortor tempus.
                 </p>
@@ -342,7 +341,7 @@
               />
               <div class="text-edit">
                 <h3 class="fs-6 fw-bold">Reach Airport on Selected Date</h3>
-                <p>
+                <p class="text-style">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                   tortor tempus.
                 </p>
@@ -361,14 +360,14 @@
               />
               <div class="card-body edit-card">
                 <h3 class="mb-3">Trip To Greece</h3>
-                <p class="mb-3">
+                <p class="mb-3 text-style">
                   14-29 June <span class="ms-4"> by Robbin joseph</span>
                 </p>
                 <img class="mb-3" src="./assets/images/OPTIONS.png" alt="" />
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
                     <img src="./assets/images/building 1.png" alt="" />
-                    <span class="mx-2">24 people going</span>
+                    <span class="mx-2 text-style">24 people going</span>
                   </div>
                   <img class="" src="./assets/images/heart (6) 1.png" alt="" />
                 </div>
@@ -386,8 +385,11 @@
           />
           <div>
             <h3>Ongoing</h3>
-            <p>Trip to rome</p>
-            <p><span style="color: #8a79df">40%</span> completed</p>
+            <p class="text-style">Trip to rome</p>
+            <p class="text-style">
+              <span class="text-style" style="color: #8a79df">40%</span>
+              completed
+            </p>
             <img src="./assets/images/Group 3.png" alt="" />
           </div>
         </div>
@@ -398,8 +400,8 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-lg-5 col-md-10 testim-des">
-            <p class="mb-3">Testimonials</p>
-            <h2 class="mb-5">What people say about Us.</h2>
+            <p class="mb-3 perfix">Testimonials</p>
+            <h2 class="mb-5 title-case">What people say about Us.</h2>
             <img src="./assets/images/Group 61.png" alt="" />
           </div>
           <div class="col-lg-6 col-md-10">
@@ -412,13 +414,13 @@
                   class="position-absolute icon-testimonials"
                   alt=""
                 />
-                <p class="mb-5">
+                <p class="mb-5 text-style">
                   “On the Windows talking painted pasture yet its express
                   parties use. Sure last upon he same as knew next. Of believed
                   or diverted no.”
                 </p>
-                <h3>Mike taylor</h3>
-                <p>Lahore, Pakistan</p>
+                <h3 class="perfix">Mike taylor</h3>
+                <p class="text-style text-start">Lahore, Pakistan</p>
               </div>
               <img class="mb-3" src="./assets/images/Pagination.png" alt="" />
             </div>
@@ -488,30 +490,32 @@
       <div class="container my-5 footer-cont text-center">
         <div class="row gap-3">
           <div class="col-lg-3 col-md-6 col-sm-10 text-start logo-col">
-            <h2 class="mb-4">Jadoo.</h2>
-            <p>Book your trip in minute, get full Control for much longer.</p>
+            <h2 class="mb-4 footer-h3 Jadoo">Jadoo.</h2>
+            <p class="text-style">
+              Book your trip in minute, get full Control for much longer.
+            </p>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-10 text-start logo-2">
-            <h2 class="mb-3">Company</h2>
-            <p>About</p>
-            <p>Careers</p>
-            <p>Mobile</p>
+            <h2 class="mb-3 footer-h3">Company</h2>
+            <p class="text-style">About</p>
+            <p class="text-style">Careers</p>
+            <p class="text-style">Mobile</p>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-10 text-start logo-2">
-            <h2 class="mb-3">Contact</h2>
-            <p>Help/FAQ</p>
-            <p>Press</p>
-            <p>Affilates</p>
+            <h2 class="mb-3 footer-h3">Contact</h2>
+            <p class="text-style">Help/FAQ</p>
+            <p class="text-style">Press</p>
+            <p class="text-style">Affilates</p>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-10 text-start logo-2">
-            <h2 class="mb-3">More</h2>
-            <p>Airlinefees</p>
-            <p>Airline</p>
-            <p>Low fare tips</p>
+            <h2 class="mb-3 footer-h3">More</h2>
+            <p class="text-style">Airlinefees</p>
+            <p class="text-style">Airline</p>
+            <p class="text-style">Low fare tips</p>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-10 logo-2">
             <img src="./assets/images/Social.png" alt="" />
-            <p>Discover our app</p>
+            <p class="text-style">Discover our app</p>
             <div class="d-flex gap-1 play-store">
               <img
                 class="mx-auto"
