@@ -3,8 +3,82 @@
   --header-color: #14183e;
   --text-color: #5e6282;
   --h3-color: #1e1d4c;
-  --btn-color:  #212832;
-  --footer-color: #181e4b;
+  --btn-color: #212832;
+  --footer-color: #080809;
+}
+  /* dark-mode */
+   .dark-mode{
+  --background-all: #000000;
+  --head-color: #f5b5a5;
+  --header-color: #b4bbf8;
+  --text-color: #909bf8;
+  --h3-color: #c4c3f7;
+  --btn-color: #909bf8;
+  --footer-color:#c4c3f7;
+  --base-color: #000000;
+} 
+  body {
+    background-color: var(--base-color);
+  }
+
+#theme-switch img{
+  width: 30px;
+  height: 30px;  
+}
+#theme-switch img:last-child{
+  display: none;
+}
+
+.dark-mode #theme-switch img:last-child{
+  display: block;
+}
+.dark-mode #theme-switch img:first-child{
+  display: none;
+}
+.logo-format {
+  display: none;
+}
+.dark-mode .logo-format{
+  display: block;
+}
+.dark-mode .logoformat{
+  display: none;
+}
+
+ /* end-dark-mode */
+
+.title-case {
+  font-family: Volkhov;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--header-color);
+}
+.perfix {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--text-color);
+}
+.text-style {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: var(--text-color);
+}
+.footer-h3 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: var(--footer-color);
 }
 
 * {
@@ -18,18 +92,19 @@ nav img {
   height: 33.99px;
 }
 
-a {
+
+.nav-link {
   font-size: 17px;
-  color:var(--btn-color)!important;
+  color: var(--btn-color) !important;
   font-family: "Google Sans";
   font-weight: 400;
 }
 
-.lang-vict {
+/* .lang-vict {
   width: 9px;
   height: 4.2px;
   color: var(--header-color);
-}
+} */
 /* -------------hero---------------------- */
 .hero-img {
   max-width: 680px;
@@ -41,35 +116,21 @@ a {
 }
 
 .hero-head {
-  font-family: Poppins;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: uppercase;
+  text-align: start;
   color: var(--head-color);
   max-width: 410px;
 }
-
 .hero-desc h1 {
-  font-family: Volkhov;
-  font-weight: 700;
   font-size: 84px;
   line-height: 89px;
   letter-spacing: -4%;
-  color: #181e4b;
+  color: var(--header-color);
   position: relative;
+  text-transform: none;
   z-index: 1;
 }
-
 .hero-text {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0%;
   max-width: 477px;
-  color: var(--text-color);
 }
 #hero {
   margin-top: 80px;
@@ -105,28 +166,13 @@ a {
 .offer-cards {
   margin-top: 120px;
 }
-.header-title p {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  text-align: center;
-  color: var(--text-color);
-}
-.header-title h2 {
-  font-family: Volkhov;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 100%;
-  text-align: center;
-  text-transform: capitalize;
-  color: #14183e;
-}
+
 .offer-cards img {
   display: inline-block;
   width: 92px;
   height: 78px;
 }
+
 .offer-cards h3 {
   color: var(--h3-color);
   font-family: Open Sans;
@@ -136,62 +182,19 @@ a {
   letter-spacing: 0%;
   text-align: center;
 }
-.offer-cards {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0%;
-  text-align: center;
-  color: var(--text-color);
-}
 /* ------------------------destination----------------------- */
 .navig-arrow img {
   width: 20px;
   height: 20px;
 }
-.card {
-  .card-body {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: 0%;
-    color: var(--text-color);
-    .navig-arrow {
-      font-family: Poppins;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 125%;
-      letter-spacing: 0%;
-      color: var(--text-color);
-    }
-  }
-}
+
 .img-position {
   transform: translate(-50%, -120%);
   left: 92%;
   z-index: 0;
 }
 /* ----------------------------next trip--------------------------- */
-.book-trip p {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  /* text-align: center; */
-  color: var(--text-color);
-}
-.book-trip h2 {
-  font-family: Volkhov;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: capitalize;
-  color: var(--header-color);
-}
+
 .text-edit h3 {
   font-family: Poppins;
   font-weight: 700;
@@ -200,27 +203,12 @@ a {
   letter-spacing: 0%;
   color: var(--text-color);
 }
-.text-edit p {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 125%;
-  letter-spacing: 0%;
-  color: var(--text-color);
-}
+
 .small-card {
   max-width: 260px;
   height: 129px;
   top: 58%;
   left: 75%;
-  p {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: -1.5%;
-    color: var(--header-color);
-  }
   h3 {
     font-family: Poppins;
     font-weight: 400;
@@ -239,53 +227,11 @@ a {
     letter-spacing: 1.5%;
     color: var(--header-color);
   }
-  p {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: -0.5%;
-    color: #84829a;
-  }
 }
 /* ----------------------testimonial------------------------ */
-.testim-des p {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: uppercase;
-  color: var(--text-color);
-}
-.testim-des h2 {
-  font-family: Volkhov;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-transform: capitalize;
-  color: #181e4b;
-}
 .icon-testimonials {
   bottom: 90%;
   right: 95%;
-}
-.testm-person-card p {
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 0%;
-  color: var(--text-color);
-}
-.testm-person-card h3 {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: var(--text-color);
 }
 /* ------------------subscribe------------------ */
 .subscribe-parent {
@@ -329,67 +275,19 @@ a {
   left: 92%;
 }
 /* ---------------------------footer---------------------- */
-.logo-col {
-  h2 {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: var(--footer-color);
-  }
-  p {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 125%;
-    letter-spacing: 0%;
-    color: var(--text-color);
-  }
-}
-.logo-2 {
-  h2 {
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 125%;
-    letter-spacing: 0%;
-    color:var(--header-color);
-  }
-  p {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 125%;
-    letter-spacing: 0%;
-    color: var(--text-color);
-  }
+.Jadoo {
+  font-size: 44px;
 }
 
-
-/* ----------------dark mode------------------- */
-body.dark {
-  --bs-body-bg: #0b0f14;        
-  --bs-body-color: #e9edf1;     
-  --bs-card-bg: #11161c;        
-  --bs-border-color: #1d2630;   
-  --bs-primary: #4c8dff;      
-  background-color: var(--bs-body-bg) !important;
-  color: var(--bs-body-color) !important;
-}
-body.dark .card {
-  background-color: var(--bs-card-bg);
-  border-color: var(--bs-border-color);
-}
-body.dark .navbar,
-body.dark .bg-body-tertiary {
-  background-color: #0f141a !important;
-  color: var(--bs-body-color) !important;
-  border-color: var(--bs-border-color) !important;
-}
 
 /* -------------------------@media------------------------- */
 @media (max-width: 992px) {
+  .perfix {
+    font-size: 16px;
+  }
+  .title-case {
+    font-size: 38px;
+  }
   #hero::after {
     width: clamp(260px, 60vw, 640px);
   }
@@ -403,6 +301,9 @@ body.dark .bg-body-tertiary {
   }
   .hero-desc h1 {
     font-size: 40px;
+  }
+  .text-style {
+    text-align: center;
   }
   /* .play-btn,
   .find-btn {
@@ -420,12 +321,6 @@ body.dark .bg-body-tertiary {
   .side-img {
     display: none;
   }
-  .header-title p {
-    font-size: 10px;
-  }
-  .header-title h2 {
-    font-size: 20px;
-  }
   /* ----------------destination--------------- */
   .img-position {
     display: none;
@@ -436,21 +331,13 @@ body.dark .bg-body-tertiary {
   }
   .book-trip {
     text-align: center;
-    h2 {
-      font-size: 32px;
-    }
   }
   /* -----------------------testimonial------------------------- */
   .icon-testimonials {
     bottom: 88%;
     right: 9%;
   }
-  .testim-des {
-    text-align: center;
-    h2 {
-      font-size: 34px;
-    }
-  }
+
   /* -----------------------subscribe---------------------------------- */
   .input-format {
     flex-direction: column !important;
@@ -473,9 +360,9 @@ body.dark .bg-body-tertiary {
   .logo-2 {
     text-align: center !important;
   }
-  .play-store{
+  .play-store {
     flex-direction: column;
-    img{
+    img {
       width: 100px;
       /* margin: 0 auto; */
     }

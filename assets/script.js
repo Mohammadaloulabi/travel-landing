@@ -1,18 +1,26 @@
 // --------------------------Dark Mode script----------------------------------
-const page = document.getElementById("page");
-const saved = localStorage.getItem("theme-old");
-if (saved === "dark") page.classList.add("dark");
 
-document.getElementById("toggle").addEventListener("click", () => {
-  page.classList.toggle("dark");
-  localStorage.setItem(
-    "theme-old",
-    page.classList.contains("dark") ? "dark" : "light"
-  );
+let darkmode = localStorage.getItem("darkmode");
+const themSwitch = document.getElementById("theme-switch");
+
+const enableDarkMode = () => {
+  document.body.classList.add("dark-mode");
+  localStorage.setItem("darkmode", "active");
+};
+
+const disableDarkMode = () => {
+  document.body.classList.remove("dark-mode");
+  localStorage.setItem("darkmode", null);
+};
+if (darkmode === "active") enableDarkMode();
+
+themSwitch.addEventListener("click", () => {
+  darkmode = localStorage.getItem("darkmode");
+  darkmode !== "active" ? enableDarkMode() : disableDarkMode();
 });
 
 // ------------------------translate script--------------------------------------
-// نصوص الهيرو فقط
+
 const i18n = {
   en: {
     "hero.kicker": "Best Destinations around the world",
@@ -25,7 +33,8 @@ const i18n = {
   ar: {
     "hero.kicker": "أفضل الوجهات حول العالم",
     "hero.title": "سافر، واستمتع، وعيش حياة جديدة مليئة بالحيوية.",
-    "hero.subtitle":" بُني ويكِت لفترة أطول ليُعجب بنفسه فحسب.كان يفضّل الانشغال بالاستماع إلى الرياضيين.أما بوابة الحديقة، فكانوا يبيعونها بصعوبة في الغرب.",
+    "hero.subtitle":
+      " بُني ويكِت لفترة أطول ليُعجب بنفسه فحسب.كان يفضّل الانشغال بالاستماع إلى الرياضيين.أما بوابة الحديقة، فكانوا يبيعونها بصعوبة في الغرب.",
     "hero.cta": "اكتشف الآن",
     "hero.cta2": "تشغيل العرض التجريبي",
   },
@@ -49,28 +58,25 @@ function applyLang(lang) {
     if (typeof text !== "undefined") el.textContent = text;
   });
 
-
   if (lang === "ar") {
     heroEl.setAttribute("dir", "rtl");
     heroEl.classList.add("text-end");
     heroEl.classList.remove("text-start");
-   
+
     toggleBtn.textContent = "EN";
     toggleBtn.setAttribute("aria-label", "Switch to English");
   } else {
     heroEl.setAttribute("dir", "ltr");
     heroEl.classList.add("text-start");
     heroEl.classList.remove("text-end");
-   
+
     toggleBtn.textContent = "AR";
     toggleBtn.setAttribute("aria-label", "التبديل إلى العربية");
   }
 
-  
   localStorage.setItem(STORAGE_KEY, lang);
   currentLang = lang;
 }
-
 
 toggleBtn.addEventListener("click", () => {
   const next = currentLang === "en" ? "ar" : "en";
